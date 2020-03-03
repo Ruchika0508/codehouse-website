@@ -1,0 +1,19 @@
+create table visitors
+`name` varchar(100) NOT NULL,
+`email` varchar(100) NOT NULL,
+`password` varchar(10) NOT NULL ,
+`sex` varchar(10) ,
+`course` varchar(100) NOT NULL,
+ phone varchar(12) NOT NULL,
+ PRIMARY KEY  (`email`)
+    ) ;
+
+
+
+mysql> create table appointment(
+    -> `email` varchar(100) NOT NULL,
+    -> `date` varchar(30) NOT NULL,
+    -> `time` varchar(30) NOT NULL,
+    -> PRIMARY KEY(date,time));
+Query OK, 0 rows affected (0.08 sec)
+
